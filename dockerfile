@@ -16,7 +16,6 @@ RUN powershell -Command \
 	Remove-Item c:\python-3.11.2-amd64.exe -Force
 
 # 安装 Mingw-w64 和 Git
-RUN choco install -y git --version 2.39.2 --params "/GitAndUnixToolsOnPath" ; \
-	choco install -y mingw --version 8.1.0 ;
-	
+RUN choco install -y git --version 2.39.2 --params "/GitAndUnixToolsOnPath" ;
+RUN	choco install -y mingw --version 8.1.0 ;
 RUN	choco install -y python --version 3.10.4 ;
