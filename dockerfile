@@ -18,4 +18,4 @@ RUN powershell -Command \
 # 安装 Mingw-w64 和 Git
 RUN choco install -y git --version 2.39.2 --params "/GitAndUnixToolsOnPath" ; \
 	choco install -y mingw --version 8.1.0 ; \
-	choco install -y choco python --version 3.10.4 ;
+	choco install -y python --version 3.10.4 ;
