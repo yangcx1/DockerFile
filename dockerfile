@@ -19,3 +19,5 @@ RUN powershell -Command \
 RUN choco install -y git --version 2.39.2 --params "/GitAndUnixToolsOnPath" ;
 RUN	choco install -y mingw --version 8.1.0 ;
 RUN	choco install -y python --version 3.10.4 ;
+
+RUN ["pip", "install", "conan==1.59.0", "ninja==1.11.1", "cmake==3.25.2"]
